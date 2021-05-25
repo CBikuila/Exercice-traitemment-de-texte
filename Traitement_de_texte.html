@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestion de l'objet 'chaine de caractere</title>
+</head>
+<body>
+	<script >
+		var identite_Nom = prompt("Entrez votre Nom de famille :"),identite_Prenom = prompt("Entrez votre prénom :"),identite_Age = prompt("Entrez votre âge :"),identite ;
+
+		
+    		identite= identite_Nom +(" ")+ identite_Prenom +(" ")+ identite_Age +(" ans.");
+
+    		var donneesMin = identite.toLowerCase();
+    		var donneesMax = identite.toUpperCase();
+    		
+    		alert(donneesMin);
+    		alert(donneesMax);
+
+		var texteAtraiter = prompt("Entrez vos 3 aliments préférés :");
+		var lettreAtraiter = prompt("Entrez une lettre ou une suite de lettre utilsé dans votre réponse précédente :");
+
+		var positionLD =texteAtraiter.indexOf(lettreAtraiter);
+		var positionLF =texteAtraiter.lastIndexOf(lettreAtraiter);
+
+		var positionLDR =positionLD+1,positionLFR=positionLF+1;
+
+		alert("Votre ou vos lettre\(s\) se trouve\(nt\) en "+positionLDR+(" position et en ")+positionLFR);
+
+
+			
+			
+		
+
+	</script>
+</body>
+</html>
